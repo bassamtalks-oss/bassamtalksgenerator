@@ -91,9 +91,9 @@ export default function AppLayout() {
                 href="https://bassamtalksai.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full px-4 py-2.5 rounded-lg bg-gradient-to-r from-primary to-accent text-primary-foreground text-xs font-semibold text-center hover:opacity-90 transition-opacity shadow-md"
+                className="group relative w-full px-4 py-3 rounded-lg bg-gradient-to-r from-[hsl(45,100%,51%)] via-[hsl(35,100%,50%)] to-[hsl(25,100%,50%)] text-[hsl(0,0%,10%)] text-xs font-bold text-center shadow-lg shadow-[hsl(45,100%,51%)/0.3] hover:shadow-[hsl(45,100%,51%)/0.5] hover:scale-[1.03] transition-all duration-200 animate-pulse hover:animate-none"
               >
-                🎓 Have our AI course now at 33% off
+                🎓 Have our AI course now at 33% off!
               </a>
             </div>
           </SidebarContent>
