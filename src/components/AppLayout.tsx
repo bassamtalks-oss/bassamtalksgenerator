@@ -85,6 +85,16 @@ export default function AppLayout() {
                   Telegram
                 </a>
               </div>
+
+              {/* AI Course CTA */}
+              <a
+                href="https://bassamtalksai.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full px-4 py-2.5 rounded-lg bg-gradient-to-r from-primary to-accent text-primary-foreground text-xs font-semibold text-center hover:opacity-90 transition-opacity shadow-md"
+              >
+                🎓 Have our AI course now at 33% off
+              </a>
             </div>
           </SidebarContent>
         </Sidebar>
