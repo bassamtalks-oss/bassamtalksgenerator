@@ -73,22 +73,14 @@ export function generatePrompt(config: CPEConfiguration): string {
     case 'flux':
       return segments.join('. ') + '.';
 
-    case 'sdxl':
-      return segments.join(', ');
-
     case 'wan22':
-      // Wan wants 80-120 word over-specified prompts
       return segments.join('. ') + '. Cinematic quality, high production value, professional cinematography.';
 
-    case 'runway_gen3':
-      return segments.join(', ').toLowerCase();
+    case 'nano_banana_pro':
+      return segments.join(', ');
 
-    case 'cogvideox':
-      // Max 15 parts, concise
-      return segments.slice(0, 15).join(', ');
-
-    case 'hunyuan':
-      return segments.map(s => s.charAt(0).toUpperCase() + s.slice(1)).join('. ') + '.';
+    case 'seedance':
+      return segments.join('. ') + '. Smooth motion, cinematic quality.';
 
     default:
       return segments.join(', ');
