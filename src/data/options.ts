@@ -1,4 +1,4 @@
-import { ShotSize, CompositionStyle, MovementEquipment, MovementType, MovementTiming, Mood, ColorTone, AspectRatio, TimeOfDay, TargetModel } from './types';
+import { ShotSize, CompositionStyle, MovementEquipment, MovementType, MovementTiming, Mood, ColorTone, AspectRatio, TimeOfDay, TargetModel, ArtStyle } from './types';
 
 export const shotSizes: { id: ShotSize; name: string; abbr: string }[] = [
   { id: 'EWS', name: 'Extreme Wide Shot', abbr: 'EWS' },
@@ -134,4 +134,27 @@ export const targetModels: { id: TargetModel; name: string; type: 'image' | 'vid
   { id: 'runway_gen3', name: 'Runway Gen-3', type: 'video' },
   { id: 'cogvideox', name: 'CogVideoX', type: 'video' },
   { id: 'hunyuan', name: 'HunyuanVideo', type: 'video' },
+];
+
+export const artStyles: { id: ArtStyle; name: string }[] = [
+  { id: 'photorealistic', name: 'Photorealistic' },
+  { id: 'cinematic', name: 'Cinematic' },
+  { id: 'anime', name: 'Anime' },
+  { id: 'cartoon_comic', name: 'Cartoon & Comic' },
+  { id: 'cgi_3d', name: 'CGI & 3D Rendered' },
+  { id: 'digital_painting', name: 'Digital Painting' },
+  { id: 'fantasy', name: 'Fantasy' },
+  { id: 'pixel_art', name: 'Pixel Art' },
+  { id: 'scifi_cyberpunk', name: 'Sci-Fi & Cyberpunk' },
+  { id: 'surreal', name: 'Surreal & Abstract' },
+  { id: 'black_white', name: 'Black & White' },
+  { id: 'watercolor', name: 'Watercolor' },
+  { id: 'oil_painting', name: 'Oil Painting' },
+  { id: 'pop_art', name: 'Pop Art' },
+  { id: 'steampunk', name: 'Steampunk' },
+  { id: 'impressionist', name: 'Impressionist' },
+  { id: 'vaporwave', name: 'Vaporwave' },
+  { id: 'minimalist', name: 'Minimalist' },
+  { id: 'art_nouveau', name: 'Art Nouveau' },
+  { id: 'gothic', name: 'Gothic' },
 ];

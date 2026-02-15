@@ -3,7 +3,7 @@ import { cameras } from '@/data/cameras';
 import { lenses } from '@/data/lenses';
 import { filmStocks } from '@/data/filmStocks';
 import { lightSources, lightingStyles } from '@/data/lighting';
-import { shotSizes, compositionStyles, movementEquipments, movementTypes, movementTimings, moods, colorTones, timesOfDay } from '@/data/options';
+import { shotSizes, compositionStyles, movementEquipments, movementTypes, movementTimings, moods, colorTones, timesOfDay, artStyles } from '@/data/options';
 
 function lookup<T extends { id: string; name: string }>(list: T[], id: string | null): string | null {
   if (!id) return null;
@@ -15,6 +15,9 @@ function buildSegments(config: CPEConfiguration): string[] {
 
   if (config.subjectDescription) parts.push(config.subjectDescription);
   if (config.sceneDescription) parts.push(config.sceneDescription);
+
+  const artStyle = lookup(artStyles, config.artStyle);
+  if (artStyle) parts.push(`${artStyle} style`);
 
   const cam = config.camera ? cameras.find(c => c.id === config.camera) : null;
   const lens = config.lens ? lenses.find(l => l.id === config.lens) : null;
