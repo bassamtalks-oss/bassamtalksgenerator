@@ -67,6 +67,8 @@ export type TimeOfDay = 'dawn' | 'morning' | 'midday' | 'afternoon' | 'golden_ho
 
 export type TargetModel = 'midjourney' | 'flux' | 'sdxl' | 'wan22' | 'runway_gen3' | 'cogvideox' | 'hunyuan';
 
+export type ArtStyle = 'photorealistic' | 'cinematic' | 'anime' | 'cartoon_comic' | 'cgi_3d' | 'digital_painting' | 'fantasy' | 'pixel_art' | 'scifi_cyberpunk' | 'surreal' | 'black_white' | 'watercolor' | 'oil_painting' | 'pop_art' | 'steampunk' | 'impressionist' | 'vaporwave' | 'minimalist' | 'art_nouveau' | 'gothic';
+
 // ===== Configuration State =====
 
 export interface CPEConfiguration {
@@ -84,6 +86,7 @@ export interface CPEConfiguration {
   colorTone: ColorTone | null;
   aspectRatio: AspectRatio | null;
   timeOfDay: TimeOfDay | null;
+  artStyle: ArtStyle | null;
   targetModel: TargetModel;
   subjectDescription: string;
   sceneDescription: string;

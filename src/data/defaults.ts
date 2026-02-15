@@ -16,6 +16,7 @@ export function getDefaultConfig(): CPEConfiguration {
     colorTone: null,
     aspectRatio: null,
     timeOfDay: null,
+    artStyle: null,
     targetModel: 'midjourney',
     subjectDescription: '',
     sceneDescription: '',
