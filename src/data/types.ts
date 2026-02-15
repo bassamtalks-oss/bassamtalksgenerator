@@ -65,7 +65,7 @@ export type AspectRatio = '1.33:1' | '1.37:1' | '1.43:1' | '1.66:1' | '1.78:1' |
 
 export type TimeOfDay = 'dawn' | 'morning' | 'midday' | 'afternoon' | 'golden_hour' | 'blue_hour' | 'dusk' | 'night';
 
-export type TargetModel = 'midjourney' | 'flux' | 'sdxl' | 'wan22' | 'runway_gen3' | 'cogvideox' | 'hunyuan';
+export type TargetModel = 'midjourney' | 'flux' | 'wan22' | 'nano_banana_pro' | 'seedance';
 
 export type ArtStyle = 'photorealistic' | 'cinematic' | 'anime' | 'cartoon_comic' | 'cgi_3d' | 'digital_painting' | 'fantasy' | 'pixel_art' | 'scifi_cyberpunk' | 'surreal' | 'black_white' | 'watercolor' | 'oil_painting' | 'pop_art' | 'steampunk' | 'impressionist' | 'vaporwave' | 'minimalist' | 'art_nouveau' | 'gothic';
 

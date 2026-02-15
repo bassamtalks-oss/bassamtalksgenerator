@@ -129,11 +129,9 @@ export const timesOfDay: { id: TimeOfDay; name: string }[] = [
 export const targetModels: { id: TargetModel; name: string; type: 'image' | 'video' }[] = [
   { id: 'midjourney', name: 'Midjourney', type: 'image' },
   { id: 'flux', name: 'FLUX', type: 'image' },
-  { id: 'sdxl', name: 'SDXL', type: 'image' },
   { id: 'wan22', name: 'Wan 2.2', type: 'video' },
-  { id: 'runway_gen3', name: 'Runway Gen-3', type: 'video' },
-  { id: 'cogvideox', name: 'CogVideoX', type: 'video' },
-  { id: 'hunyuan', name: 'HunyuanVideo', type: 'video' },
+  { id: 'nano_banana_pro', name: 'Nano Banana Pro', type: 'image' },
+  { id: 'seedance', name: 'Seedance', type: 'video' },
 ];
 
 export const artStyles: { id: ArtStyle; name: string }[] = [
