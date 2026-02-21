@@ -1,4 +1,4 @@
-import { ShotSize, CompositionStyle, MovementEquipment, MovementType, MovementTiming, Mood, ColorTone, AspectRatio, TimeOfDay, TargetModel, ArtStyle } from './types';
+import { ShotSize, CompositionStyle, MovementEquipment, MovementType, MovementTiming, Mood, ColorTone, AspectRatio, TimeOfDay, TargetModel, ArtStyle, MovieLook } from './types';
 
 export const shotSizes: { id: ShotSize; name: string; abbr: string }[] = [
   { id: 'ECU', name: 'Extreme Close-Up', abbr: 'ECU' },
@@ -150,4 +150,17 @@ export const artStyles: { id: ArtStyle; name: string }[] = [
   { id: 'minimalist', name: 'Minimalist' },
   { id: 'art_nouveau', name: 'Art Nouveau' },
   { id: 'gothic', name: 'Gothic' },
+];
+
+export const movieLooks: { id: MovieLook; name: string }[] = [
+  { id: 'candlelit_period', name: 'Candlelit Period' },
+  { id: 'cold_minimalism', name: 'Cold Minimalism' },
+  { id: 'cold_space', name: 'Cold Space' },
+  { id: 'cold_wilderness', name: 'Cold Wilderness' },
+  { id: 'contemplative_scifi', name: 'Contemplative Sci-Fi' },
+  { id: 'controlled_modern', name: 'Controlled Modern' },
+  { id: 'controlled_tension', name: 'Controlled Tension' },
+  { id: 'desaturated_dread', name: 'Desaturated Dread' },
+  { id: 'desaturated_trenches', name: 'Desaturated Trenches' },
+  { id: 'desert_gold', name: 'Desert Gold' },
 ];

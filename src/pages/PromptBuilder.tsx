@@ -7,12 +7,12 @@ import { cameras } from '@/data/cameras';
 import { lenses } from '@/data/lenses';
 import { filmStocks } from '@/data/filmStocks';
 import { lightSources, lightingStyles } from '@/data/lighting';
-import { shotSizes, compositionStyles, movementEquipments, movementTypes, movementTimings, moods, colorTones, aspectRatios, timesOfDay, artStyles } from '@/data/options';
+import { shotSizes, compositionStyles, movementEquipments, movementTypes, movementTimings, moods, colorTones, aspectRatios, timesOfDay, artStyles, movieLooks } from '@/data/options';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
-import { RotateCcw, Camera, Aperture, Film, Sun, Move, Palette, Type, Paintbrush } from 'lucide-react';
+import { RotateCcw, Camera, Aperture, Film, Sun, Move, Palette, Type, Paintbrush, Clapperboard } from 'lucide-react';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
 import { ChevronDown } from 'lucide-react';
@@ -207,6 +207,11 @@ export default function PromptBuilder() {
           {/* Styles */}
           <Section title="Art Style" icon={Paintbrush}>
             <ConfigSelector label="Style" value={config.artStyle} options={artStyles} onChange={v => updateConfig({ artStyle: v })} />
+          </Section>
+
+          {/* Movie Look */}
+          <Section title="Movie Look" icon={Clapperboard}>
+            <ConfigSelector label="Look" value={config.movieLook} options={movieLooks} onChange={v => updateConfig({ movieLook: v })} />
           </Section>
 
           {/* Mood & Color */}
