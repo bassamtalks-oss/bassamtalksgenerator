@@ -43,7 +43,7 @@ export interface LightSource {
 
 export type LightingStyle = 'high_key' | 'low_key' | 'soft' | 'hard' | 'naturalistic' | 'chiaroscuro' | 'rembrandt' | 'split' | 'rim' | 'silhouette' | 'dramatic' | 'flat';
 
-export type ShotSize = 'CU' | 'ECU' | 'MS';
+export type ShotSize = 'ECU' | 'CU' | 'MS' | 'TQS' | 'LS' | 'WS' | 'OTS' | 'POV' | 'BACK';
 
 export type CompositionStyle = 'front' | 'angle_45' | 'profile';
 

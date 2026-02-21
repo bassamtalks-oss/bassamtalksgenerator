@@ -1,9 +1,15 @@
 import { ShotSize, CompositionStyle, MovementEquipment, MovementType, MovementTiming, Mood, ColorTone, AspectRatio, TimeOfDay, TargetModel, ArtStyle } from './types';
 
 export const shotSizes: { id: ShotSize; name: string; abbr: string }[] = [
-  { id: 'MS', name: 'Medium Shot', abbr: 'MS' },
-  { id: 'CU', name: 'Close-Up', abbr: 'CU' },
   { id: 'ECU', name: 'Extreme Close-Up', abbr: 'ECU' },
+  { id: 'CU', name: 'Close-Up', abbr: 'CU' },
+  { id: 'MS', name: 'Medium Shot', abbr: 'MS' },
+  { id: 'TQS', name: 'Three Quarter Shot', abbr: 'TQS' },
+  { id: 'LS', name: 'Long Shot', abbr: 'LS' },
+  { id: 'WS', name: 'Wide Shot', abbr: 'WS' },
+  { id: 'OTS', name: 'Over the Shoulder', abbr: 'OTS' },
+  { id: 'POV', name: 'Point of View', abbr: 'POV' },
+  { id: 'BACK', name: 'Back', abbr: 'BACK' },
 ];
 
 export const compositionStyles: { id: CompositionStyle; name: string }[] = [
