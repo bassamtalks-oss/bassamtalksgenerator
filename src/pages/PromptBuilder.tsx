@@ -60,15 +60,11 @@ export default function PromptBuilder() {
 
   // Filter film stocks
   const availableStocks = useMemo(() => {
-    return filmStocks.map(s => {
-      let disabled = isDigitalCamera;
-      if (selectedCamera) {
-        if (s.format === 'IMAX' && selectedCamera.type !== 'imax') disabled = true;
-        if (s.format === '65mm' && !['Film 65mm', '65mm'].includes(selectedCamera.sensorSize)) disabled = true;
-      }
-      return { ...s, disabled };
-    });
-  }, [selectedCamera, isDigitalCamera]);
+    return filmStocks.map(s => ({
+      ...s,
+      disabled: isDigitalCamera,
+    }));
+  }, [isDigitalCamera]);
 
   // Filter light sources by era
   const availableLights = useMemo(() => {
