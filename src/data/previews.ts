@@ -117,6 +117,10 @@ export const previewData: Record<string, { description?: string; image?: string 
   front: { description: `Front-facing angle. Direct eye contact with the viewer.`, image: "/previews/shot-cu_front.jpg" },
   angle_45: { description: `45° angle. Natural, cinematic framing with depth.`, image: "/previews/shot-cu_45.jpg" },
   profile: { description: `Profile angle. Side view emphasizing silhouette.`, image: "/previews/shot-cu_profile.jpg" },
+  high_angle: { description: `Camera looks down on subject. Conveys vulnerability, observation, or context.`, image: "/previews/angle-high.jpg" },
+  low_angle: { description: `Camera looks up at subject. Conveys power, dominance, or grandeur.`, image: "/previews/angle-low.jpg" },
+  birds_eye: { description: `Directly overhead looking down. God-like perspective, patterns, and vulnerability.`, image: "/previews/angle-birds_eye.jpg" },
+  worms_eye: { description: `Ground-level looking up. Subject appears towering and dominant.`, image: "/previews/angle-worms_eye.jpg" },
 
   // Movement Equipment
   static: { description: `Locked-off tripod. Stable, composed, and deliberate framing.` },
