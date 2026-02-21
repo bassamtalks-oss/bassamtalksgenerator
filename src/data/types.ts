@@ -65,7 +65,7 @@ export type TargetModel = 'midjourney' | 'flux' | 'wan22' | 'nano_banana_pro' | 
 
 export type ArtStyle = 'photorealistic' | 'cinematic' | 'anime' | 'cartoon_comic' | 'cgi_3d' | 'digital_painting' | 'fantasy' | 'pixel_art' | 'scifi_cyberpunk' | 'surreal' | 'black_white' | 'watercolor' | 'oil_painting' | 'pop_art' | 'steampunk' | 'impressionist' | 'vaporwave' | 'minimalist' | 'art_nouveau' | 'gothic';
 
-export type MovieLook = 'candlelit_period' | 'cold_minimalism' | 'cold_space' | 'cold_wilderness' | 'contemplative_scifi' | 'controlled_modern' | 'controlled_tension' | 'desaturated_dread' | 'desaturated_trenches' | 'desert_gold' | 'digital_nightscape' | 'documentary_natural' | 'dreamlike_memories' | 'futuristic_neon_blue' | 'golden_ancient_rome' | 'green_tinted_digital' | 'movie_high_contrast_bw' | 'muted_elegance' | 'near_future_warmth' | 'neon_cyberpunk';
+export type MovieLook = 'candlelit_period' | 'cold_minimalism' | 'cold_space' | 'cold_wilderness' | 'contemplative_scifi' | 'controlled_modern' | 'controlled_tension' | 'desaturated_dread' | 'desaturated_trenches' | 'desert_gold' | 'digital_nightscape' | 'documentary_natural' | 'dreamlike_memories' | 'futuristic_neon_blue' | 'golden_ancient_rome' | 'green_tinted_digital' | 'movie_high_contrast_bw' | 'muted_elegance' | 'near_future_warmth' | 'neon_cyberpunk' | 'overexposed_folk' | 'pastel_symmetrical' | 'saturated_apocalyptic' | 'saturated_pop_culture' | 'soft_countryside' | 'soft_warmth' | 'sun_drenched_summer' | 'symmetrical_precision' | 'warm_whimsy' | 'warm_wonder';
 
 // ===== Configuration State =====
 
