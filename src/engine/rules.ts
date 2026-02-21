@@ -2,7 +2,7 @@ import { CPEConfiguration, RuleViolation, Camera, Lens } from '@/data/types';
 import { cameras } from '@/data/cameras';
 import { lenses } from '@/data/lenses';
 import { lightSources } from '@/data/lighting';
-import { filmStocks } from '@/data/filmStocks';
+
 
 type RuleChecker = (config: CPEConfiguration) => RuleViolation | null;
 
