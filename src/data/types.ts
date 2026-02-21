@@ -45,7 +45,7 @@ export type LightingStyle = 'high_key' | 'low_key' | 'soft' | 'hard' | 'naturali
 
 export type ShotSize = 'ECU' | 'CU' | 'MS' | 'TQS' | 'LS' | 'WS' | 'OTS' | 'POV' | 'BACK';
 
-export type CompositionStyle = 'front' | 'angle_45' | 'profile';
+export type CompositionStyle = 'front' | 'angle_45' | 'profile' | 'high_angle' | 'low_angle' | 'birds_eye' | 'worms_eye';
 
 export type MovementEquipment = 'static' | 'handheld' | 'shoulder_rig' | 'steadicam' | 'gimbal' | 'dolly' | 'slider' | 'crane' | 'jib' | 'technocrane' | 'drone' | 'cable_cam' | 'car_mount' | 'snorricam';
 

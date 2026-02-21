@@ -16,6 +16,10 @@ export const compositionStyles: { id: CompositionStyle; name: string }[] = [
   { id: 'front', name: 'Front' },
   { id: 'angle_45', name: '45°' },
   { id: 'profile', name: 'Profile' },
+  { id: 'high_angle', name: 'High Angle' },
+  { id: 'low_angle', name: 'Low Angle' },
+  { id: 'birds_eye', name: "Bird's Eye" },
+  { id: 'worms_eye', name: "Worm's Eye" },
 ];
 
 export const movementEquipments: { id: MovementEquipment; name: string }[] = [
