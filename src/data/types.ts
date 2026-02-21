@@ -31,10 +31,6 @@ export interface Lens {
 export interface FilmStock {
   id: string;
   name: string;
-  manufacturer: string;
-  iso: number;
-  type: 'color_negative' | 'bw_negative' | 'reversal';
-  format: '35mm' | '65mm' | '70mm' | 'IMAX';
 }
 
 export interface LightSource {

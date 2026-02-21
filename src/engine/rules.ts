@@ -2,7 +2,7 @@ import { CPEConfiguration, RuleViolation, Camera, Lens } from '@/data/types';
 import { cameras } from '@/data/cameras';
 import { lenses } from '@/data/lenses';
 import { lightSources } from '@/data/lighting';
-import { filmStocks } from '@/data/filmStocks';
+
 
 type RuleChecker = (config: CPEConfiguration) => RuleViolation | null;
 
@@ -22,15 +22,6 @@ const rules: RuleChecker[] = [
     const cam = getCamera(config.camera);
     if (cam?.type === 'film' && !config.filmStock) {
       return { id: 'stock_required_film', severity: 'WARNING', message: 'Film cameras typically require a film stock selection.', fields: ['filmStock'] };
-    }
-    return null;
-  },
-  (config) => {
-    const cam = getCamera(config.camera);
-    const stock = config.filmStock ? filmStocks.find(f => f.id === config.filmStock) : undefined;
-    if (cam && stock) {
-      if (stock.format === 'IMAX' && cam.type !== 'imax') return { id: 'imax_stock_camera', severity: 'HARD', message: 'IMAX film stock requires an IMAX camera.', fields: ['filmStock', 'camera'] };
-      if (stock.format === '65mm' && !['Film 65mm', '65mm'].includes(cam.sensorSize)) return { id: '65mm_stock_camera', severity: 'HARD', message: '65mm film stock requires a 65mm/large format camera.', fields: ['filmStock', 'camera'] };
     }
     return null;
   },

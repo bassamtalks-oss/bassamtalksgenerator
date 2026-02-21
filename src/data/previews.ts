@@ -39,16 +39,16 @@ export const previewData: Record<string, { description?: string; image?: string 
   kowa_anamorphic: { description: `Vintage Japanese anamorphic. Distinctive blue streak flares and strong oval bokeh character.` },
 
   // Film Stocks
-  kodak_5219: { description: `Kodak Vision3 500T. High-speed tungsten stock for low-light. Rich grain, warm tones, forgiving latitude.` },
-  kodak_5213: { description: `Kodak Vision3 200T. Medium-speed tungsten. Finer grain than 500T with excellent shadow detail.` },
-  kodak_5207: { description: `Kodak Vision3 250D. Daylight-balanced with vibrant color saturation and fine grain.` },
-  kodak_5203: { description: `Kodak Vision3 50D. Ultra-fine grain daylight stock. Maximum resolution and color fidelity.` },
-  kodak_5222: { description: `Kodak Double-X B&W. Classic black and white stock used since the 1950s. Rich tonal range.` },
-  fuji_eterna_500t: { description: `Fujifilm Eterna 500T. Cooler color palette than Kodak with distinctive green-cyan shadows.` },
-  fuji_eterna_250d: { description: `Fujifilm Eterna 250D. Daylight stock with muted, pastel-like color rendering.` },
-  ilford_hp5: { description: `Ilford HP5 Plus B&W. Versatile 400-speed with classic grain structure and wide exposure latitude.` },
-  kodak_65mm_5203: { description: `Kodak Vision3 50D in 65mm format. The finest grain available on the largest negative.` },
-  imax_15_70: { description: `IMAX 15-perf 70mm. 10x larger than 35mm frame. The highest resolution film format ever created.` },
+  black_and_white: { description: `Classic monochrome film look. Rich tonal range with natural grain and timeless appeal.`, image: "/previews/film-black_and_white.jpg" },
+  cinema_daylight: { description: `Daylight-balanced cinema stock. Warm natural tones with fine grain optimized for outdoor and window light.`, image: "/previews/film-cinema_daylight.jpg" },
+  cinema_tungsten: { description: `Tungsten-balanced cinema stock. Warm amber tones under artificial light with rich shadow detail.`, image: "/previews/film-cinema_tungsten.jpg" },
+  cold_film: { description: `Cool-shifted film emulsion. Blue-cyan shadows and muted highlights for a detached, melancholic feel.`, image: "/previews/film-cold_film.jpg" },
+  fine_grain: { description: `Ultra-fine grain film stock. Maximum sharpness and detail with minimal texture for clean images.`, image: "/previews/film-fine_grain.jpg" },
+  green_cast: { description: `Film stock with distinctive green color shift. Nostalgic, slightly surreal color palette.`, image: "/previews/film-green_cast.jpg" },
+  high_contrast_bw: { description: `High-contrast black and white. Deep blacks, bright whites, and minimal mid-tones for dramatic impact.`, image: "/previews/film-high_contrast_bw.jpg" },
+  high_speed_bw: { description: `Fast black and white film. Prominent grain structure with gritty texture for documentary and street work.`, image: "/previews/film-high_speed_bw.jpg" },
+  instant_film: { description: `Polaroid/Instax aesthetic. Faded colors, soft contrast, and characteristic white border feel.`, image: "/previews/film-instant_film.jpg" },
+  natural_color: { description: `True-to-life color negative film. Balanced saturation with organic warmth and subtle grain.`, image: "/previews/film-natural_color.jpg" },
 
   // Light Sources
   sun: { description: `Direct sunlight. Hard shadows, warm color temp (~5600K). Strongest natural light source.` },
