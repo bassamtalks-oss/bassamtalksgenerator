@@ -142,25 +142,12 @@ const rules: RuleChecker[] = [
 
   // === Optical Warnings ===
   (config) => {
-    if (config.shotSize && ['CU', 'BCU', 'ECU'].includes(config.shotSize)) {
+    if (config.shotSize && ['CU', 'ECU'].includes(config.shotSize)) {
       const lens = getLens(config.lens);
       if (lens?.focalRange) {
         const minFocal = parseInt(lens.focalRange);
         if (!isNaN(minFocal) && minFocal < 35) {
           return { id: 'wide_closeup', severity: 'WARNING', message: 'Wide lenses (<35mm) on close-ups cause facial distortion. Consider a longer focal length.', fields: ['lens', 'shotSize'] };
-        }
-      }
-    }
-    return null;
-  },
-  (config) => {
-    if (config.shotSize && ['EWS', 'WS'].includes(config.shotSize)) {
-      const lens = getLens(config.lens);
-      if (lens?.focalRange) {
-        const parts = lens.focalRange.split('-');
-        const maxFocal = parseInt(parts[parts.length - 1]);
-        if (!isNaN(maxFocal) && maxFocal < 50) {
-          // This is actually fine — wide lens for wide shot
         }
       }
     }

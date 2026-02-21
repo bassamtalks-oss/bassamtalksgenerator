@@ -1,30 +1,15 @@
 import { ShotSize, CompositionStyle, MovementEquipment, MovementType, MovementTiming, Mood, ColorTone, AspectRatio, TimeOfDay, TargetModel, ArtStyle } from './types';
 
 export const shotSizes: { id: ShotSize; name: string; abbr: string }[] = [
-  { id: 'EWS', name: 'Extreme Wide Shot', abbr: 'EWS' },
-  { id: 'WS', name: 'Wide Shot', abbr: 'WS' },
-  { id: 'MWS', name: 'Medium Wide Shot', abbr: 'MWS' },
   { id: 'MS', name: 'Medium Shot', abbr: 'MS' },
-  { id: 'MCU', name: 'Medium Close-Up', abbr: 'MCU' },
   { id: 'CU', name: 'Close-Up', abbr: 'CU' },
-  { id: 'BCU', name: 'Big Close-Up', abbr: 'BCU' },
   { id: 'ECU', name: 'Extreme Close-Up', abbr: 'ECU' },
-  { id: 'OTS', name: 'Over the Shoulder', abbr: 'OTS' },
-  { id: 'POV', name: 'Point of View', abbr: 'POV' },
 ];
 
 export const compositionStyles: { id: CompositionStyle; name: string }[] = [
-  { id: 'rule_of_thirds', name: 'Rule of Thirds' },
-  { id: 'centered', name: 'Centered' },
-  { id: 'symmetrical', name: 'Symmetrical' },
-  { id: 'golden_ratio', name: 'Golden Ratio' },
-  { id: 'leading_lines', name: 'Leading Lines' },
-  { id: 'frame_within_frame', name: 'Frame Within Frame' },
-  { id: 'negative_space', name: 'Negative Space' },
-  { id: 'depth_layering', name: 'Depth Layering' },
-  { id: 'dutch_angle', name: 'Dutch Angle' },
-  { id: 'worms_eye', name: "Worm's Eye View" },
-  { id: 'birds_eye', name: "Bird's Eye View" },
+  { id: 'front', name: 'Front' },
+  { id: 'angle_45', name: '45°' },
+  { id: 'profile', name: 'Profile' },
 ];
 
 export const movementEquipments: { id: MovementEquipment; name: string }[] = [

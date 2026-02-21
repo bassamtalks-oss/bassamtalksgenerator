@@ -31,7 +31,7 @@ function buildSegments(config: CPEConfiguration): string[] {
   if (shotSize) parts.push(shotSize);
 
   const comp = lookup(compositionStyles, config.composition);
-  if (comp) parts.push(`${comp} composition`);
+  if (comp) parts.push(`${comp} angle`);
 
   const tod = lookup(timesOfDay, config.timeOfDay);
   if (tod) parts.push(tod);
