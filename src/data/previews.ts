@@ -84,30 +84,26 @@ export const previewData: Record<string, { description?: string; image?: string 
   dramatic: { description: `Heightened contrast and theatrical lighting angles. Commands attention.` },
   flat: { description: `Even front lighting with minimal depth or shadow. Clinical, documentary, or deliberately bland.` },
 
-  // Shot Sizes
-  EWS: { description: `Extreme Wide Shot. Subject tiny in vast landscape. Establishes scale and isolation.`, image: "/previews/shot-ews.jpg" },
-  WS: { description: `Wide Shot. Full body visible within environment. Sets the scene.`, image: "/previews/shot-ws.jpg" },
-  MWS: { description: `Medium Wide Shot. Subject from knees up. Balances character and setting.`, image: "/previews/shot-mws.jpg" },
-  MS: { description: `Medium Shot. Waist up. The workhorse of dialogue coverage.`, image: "/previews/shot-ms.jpg" },
-  MCU: { description: `Medium Close-Up. Chest up. Begins to read emotion while keeping context.`, image: "/previews/shot-mcu.jpg" },
-  CU: { description: `Close-Up. Face fills the frame. Emotion and performance front and center.`, image: "/previews/shot-cu.jpg" },
-  BCU: { description: `Big Close-Up. Forehead to chin. Intense and intimate.`, image: "/previews/shot-bcu.jpg" },
-  ECU: { description: `Extreme Close-Up. Single feature (eye, lips, hand). Maximum detail and intensity.`, image: "/previews/shot-ecu.jpg" },
-  OTS: { description: `Over the Shoulder. Camera behind one person facing another. Classic conversation framing.`, image: "/previews/shot-ots.jpg" },
-  POV: { description: `Point of View. Camera becomes the character eyes. Immersive and subjective.`, image: "/previews/shot-pov.jpg" },
+  // Shot Sizes + Angles (combined previews)
+  CU_front: { description: `Close-Up from the front. Face fills the frame with direct eye contact. Emotion and performance front and center.`, image: "/previews/shot-cu_front.jpg" },
+  CU_angle_45: { description: `Close-Up at 45° angle. Slightly off-axis for a natural, cinematic feel with depth.`, image: "/previews/shot-cu_45.jpg" },
+  CU_profile: { description: `Close-Up in profile. Side view emphasizing silhouette and jawline. Contemplative and cinematic.`, image: "/previews/shot-cu_profile.jpg" },
+  ECU_front: { description: `Extreme Close-Up from the front. Every detail of the face visible. Maximum intensity and intimacy.`, image: "/previews/shot-ecu_front.jpg" },
+  ECU_angle_45: { description: `Extreme Close-Up at 45°. Tight framing with dimensional depth. Reveals texture and emotion.`, image: "/previews/shot-ecu_45.jpg" },
+  ECU_profile: { description: `Extreme Close-Up in profile. Dramatic side view with extreme detail on features.`, image: "/previews/shot-ecu_profile.jpg" },
+  MS_front: { description: `Medium Shot from the front. Waist up with direct framing. The workhorse of dialogue coverage.`, image: "/previews/shot-ms_front.jpg" },
+  MS_angle_45: { description: `Medium Shot at 45° angle. Natural conversational framing with environmental context.`, image: "/previews/shot-ms_45.jpg" },
+  MS_profile: { description: `Medium Shot in profile. Side view showing body language and environment. Cinematic and observational.`, image: "/previews/shot-ms_profile.jpg" },
 
-  // Compositions
-  rule_of_thirds: { description: `Subject placed at intersection of thirds grid. Natural, balanced, and dynamic.`, image: "/previews/comp-rule_of_thirds.jpg" },
-  centered: { description: `Subject dead center. Symmetrical power, confrontational, Kubrick-style.`, image: "/previews/comp-centered.jpg" },
-  symmetrical: { description: `Mirror-image balance in the frame. Order, control, and visual harmony.`, image: "/previews/comp-symmetrical.jpg" },
-  golden_ratio: { description: `Fibonacci spiral composition. Organic flow that guides the eye naturally.` },
-  leading_lines: { description: `Environmental lines converge toward the subject. Pulls the viewer in.`, image: "/previews/comp-leading_lines.jpg" },
-  frame_within_frame: { description: `Subject seen through a doorway, window, or arch. Adds depth and voyeurism.`, image: "/previews/comp-frame_within_frame.jpg" },
-  negative_space: { description: `Vast empty area surrounds the subject. Isolation, loneliness, or breathing room.`, image: "/previews/comp-negative_space.jpg" },
-  depth_layering: { description: `Foreground, mid-ground, and background all active. Creates three-dimensional depth.` },
-  dutch_angle: { description: `Camera tilted on its axis. Unease, disorientation, or psychological instability.`, image: "/previews/comp-dutch_angle.jpg" },
-  worms_eye: { description: `Camera at ground level looking up. Subject appears powerful, dominant, or towering.` },
-  birds_eye: { description: `Camera directly overhead looking down. God-like perspective, vulnerability.`, image: "/previews/comp-birds_eye.jpg" },
+  // Shot Sizes (standalone)
+  CU: { description: `Close-Up. Face fills the frame. Emotion and performance front and center.`, image: "/previews/shot-cu_front.jpg" },
+  ECU: { description: `Extreme Close-Up. Single feature fills frame. Maximum detail and intensity.`, image: "/previews/shot-ecu_front.jpg" },
+  MS: { description: `Medium Shot. Waist up. The workhorse of dialogue coverage.`, image: "/previews/shot-ms_front.jpg" },
+
+  // Angles (standalone)
+  front: { description: `Front-facing angle. Direct eye contact with the viewer. Confrontational and intimate.`, image: "/previews/shot-cu_front.jpg" },
+  angle_45: { description: `45° angle. Natural, cinematic framing with depth and dimension.`, image: "/previews/shot-cu_45.jpg" },
+  profile: { description: `Profile angle. Side view emphasizing silhouette and contemplation.`, image: "/previews/shot-cu_profile.jpg" },
 
   // Movement Equipment
   static: { description: `Locked-off tripod. Stable, composed, and deliberate framing.` },

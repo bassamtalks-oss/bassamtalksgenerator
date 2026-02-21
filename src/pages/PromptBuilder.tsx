@@ -189,8 +189,8 @@ export default function PromptBuilder() {
 
           {/* Shot */}
           <Section title="Shot & Composition" icon={Camera}>
-            <ConfigSelector label="Shot Size" value={config.shotSize} options={shotSizes.map(s => ({ id: s.id, name: `${s.abbr} — ${s.name}` }))} onChange={v => updateConfig({ shotSize: v })} />
-            <ConfigSelector label="Composition" value={config.composition} options={compositionStyles} onChange={v => updateConfig({ composition: v })} />
+            <ConfigSelector label="Shot Size" value={config.shotSize} options={shotSizes.map(s => ({ id: s.id, name: s.name }))} onChange={v => updateConfig({ shotSize: v })} />
+            <ConfigSelector label="Angle" value={config.composition} options={compositionStyles} onChange={v => updateConfig({ composition: v })} />
           </Section>
 
           {/* Movement */}

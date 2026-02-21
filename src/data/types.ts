@@ -43,9 +43,9 @@ export interface LightSource {
 
 export type LightingStyle = 'high_key' | 'low_key' | 'soft' | 'hard' | 'naturalistic' | 'chiaroscuro' | 'rembrandt' | 'split' | 'rim' | 'silhouette' | 'dramatic' | 'flat';
 
-export type ShotSize = 'EWS' | 'WS' | 'MWS' | 'MS' | 'MCU' | 'CU' | 'BCU' | 'ECU' | 'OTS' | 'POV';
+export type ShotSize = 'CU' | 'ECU' | 'MS';
 
-export type CompositionStyle = 'rule_of_thirds' | 'centered' | 'symmetrical' | 'golden_ratio' | 'leading_lines' | 'frame_within_frame' | 'negative_space' | 'depth_layering' | 'dutch_angle' | 'worms_eye' | 'birds_eye';
+export type CompositionStyle = 'front' | 'angle_45' | 'profile';
 
 export type MovementEquipment = 'static' | 'handheld' | 'shoulder_rig' | 'steadicam' | 'gimbal' | 'dolly' | 'slider' | 'crane' | 'jib' | 'technocrane' | 'drone' | 'cable_cam' | 'car_mount' | 'snorricam';
 
