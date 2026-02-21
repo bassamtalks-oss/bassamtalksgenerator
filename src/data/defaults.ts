@@ -17,6 +17,7 @@ export function getDefaultConfig(): CPEConfiguration {
     aspectRatio: null,
     timeOfDay: null,
     artStyle: null,
+    movieLook: null,
     targetModel: 'midjourney',
     subjectDescription: '',
     sceneDescription: '',

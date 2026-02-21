@@ -233,4 +233,16 @@ export const previewData: Record<string, { description?: string; image?: string 
   minimalist: { description: `Clean simplicity, geometric shapes, and generous negative space. Less is more.`, image: "/previews/style-minimalist.jpg" },
   art_nouveau: { description: `Ornate organic flowing lines, floral motifs, and decorative elegance. Mucha inspired.`, image: "/previews/style-art_nouveau.jpg" },
   gothic: { description: `Dark moody atmospheres, medieval architecture, and shadowy fantasy. Deep blacks and muted tones.`, image: "/previews/style-gothic.jpg" },
+
+  // Movie Looks
+  candlelit_period: { description: `Warm candlelight illuminating period costumes. Intimate, painterly, and historically rich.`, image: "/previews/movie-candlelit_period.jpg" },
+  cold_minimalism: { description: `Cool steel and glass environments. Clinical precision with emotional distance.`, image: "/previews/movie-cold_minimalism.jpg" },
+  cold_space: { description: `Vast desolate landscapes with a lone figure. Cold isolation and cosmic loneliness.`, image: "/previews/movie-cold_space.jpg" },
+  cold_wilderness: { description: `Harsh winter wilderness survival. Muted blues, frozen breath, and raw endurance.`, image: "/previews/movie-cold_wilderness.jpg" },
+  contemplative_scifi: { description: `Thoughtful science fiction with alien presence. Atmospheric fog and muted tension.`, image: "/previews/movie-contemplative_scifi.jpg" },
+  controlled_modern: { description: `Precise, composed modern interiors. Restrained color palette with architectural framing.`, image: "/previews/movie-controlled_modern.jpg" },
+  controlled_tension: { description: `Desert operations with tactical precision. Dust, heat haze, and coiled energy.`, image: "/previews/movie-controlled_tension.jpg" },
+  desaturated_dread: { description: `Rain-soaked urban noir. Crushed blacks, minimal color, and creeping unease.`, image: "/previews/movie-desaturated_dread.jpg" },
+  desaturated_trenches: { description: `Wartime trenches with mud and fire. Desaturated earth tones and brutal intimacy.`, image: "/previews/movie-desaturated_trenches.jpg" },
+  desert_gold: { description: `Golden desert landscapes with warm amber tones. Epic scale and mythic grandeur.`, image: "/previews/movie-desert_gold.jpg" },
 };

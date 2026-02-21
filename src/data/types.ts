@@ -65,6 +65,8 @@ export type TargetModel = 'midjourney' | 'flux' | 'wan22' | 'nano_banana_pro' | 
 
 export type ArtStyle = 'photorealistic' | 'cinematic' | 'anime' | 'cartoon_comic' | 'cgi_3d' | 'digital_painting' | 'fantasy' | 'pixel_art' | 'scifi_cyberpunk' | 'surreal' | 'black_white' | 'watercolor' | 'oil_painting' | 'pop_art' | 'steampunk' | 'impressionist' | 'vaporwave' | 'minimalist' | 'art_nouveau' | 'gothic';
 
+export type MovieLook = 'candlelit_period' | 'cold_minimalism' | 'cold_space' | 'cold_wilderness' | 'contemplative_scifi' | 'controlled_modern' | 'controlled_tension' | 'desaturated_dread' | 'desaturated_trenches' | 'desert_gold';
+
 // ===== Configuration State =====
 
 export interface CPEConfiguration {
@@ -83,6 +85,7 @@ export interface CPEConfiguration {
   aspectRatio: AspectRatio | null;
   timeOfDay: TimeOfDay | null;
   artStyle: ArtStyle | null;
+  movieLook: MovieLook | null;
   targetModel: TargetModel;
   subjectDescription: string;
   sceneDescription: string;
